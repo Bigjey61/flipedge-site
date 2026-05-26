@@ -1,0 +1,13 @@
+# Netlify configuration for Flip Edge Realty (static site)
+
+[build]
+  publish = "."
+
+# Netlify's built-in "Pretty URLs" already serves /contact for /contact.html,
+# so no per-page redirects are needed. These headers add basic security.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
