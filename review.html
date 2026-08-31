@@ -16,7 +16,10 @@
     //    Get it in the GBP dashboard: "Ask for reviews" -> copy the g.page/r/.../review link.
     //    Until then this falls back to the contact page. The printed QR points here,
     //    so it NEVER needs to change — only this one line does.
-    var REVIEW_URL = "https://flipedgerealty.com/contact.html"; // <-- replace with g.page/r/.../review
+    // Flip Edge Realty's live Google Business Profile (CID from the Maps listing).
+    // Lands on the profile where "Write a review" is one tap. For a pure 1-tap
+    // review box, paste your GBP dashboard's "Ask for reviews" g.page link here.
+    var REVIEW_URL = "https://maps.google.com/?cid=4855716065759715359";
     try { window.location.replace(REVIEW_URL); } catch (e) {}
   </script>
 </head>
