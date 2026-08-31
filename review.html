@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <title>Leave a Review — Flip Edge Realty</title>
+  <style>
+    body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;
+      padding:48px 20px;color:#1a2233;background:#f7f8fa}
+    a.btn{display:inline-block;margin-top:18px;padding:14px 26px;background:#c9a24b;
+      color:#fff;text-decoration:none;border-radius:8px;font-weight:600}
+  </style>
+  <script>
+    // ── OPERATOR: paste your Google review link here after the GBP is verified.
+    //    Get it in the GBP dashboard: "Ask for reviews" -> copy the g.page/r/.../review link.
+    //    Until then this falls back to the contact page. The printed QR points here,
+    //    so it NEVER needs to change — only this one line does.
+    var REVIEW_URL = "https://flipedgerealty.com/contact.html"; // <-- replace with g.page/r/.../review
+    try { window.location.replace(REVIEW_URL); } catch (e) {}
+  </script>
+</head>
+<body>
+  <h1>Thank you!</h1>
+  <p>Sending you to leave a quick Google review…</p>
+  <a class="btn" id="go" href="https://flipedgerealty.com/contact.html">Leave a review</a>
+  <script>document.getElementById('go').href = REVIEW_URL;</script>
+</body>
+</html>
