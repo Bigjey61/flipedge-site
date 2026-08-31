@@ -1,0 +1,8 @@
+# Static site published from the repo root; serverless functions bundled from
+# netlify/functions. The submission-created function fires on form submissions.
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"

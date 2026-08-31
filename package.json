@@ -1,0 +1,9 @@
+{
+  "name": "flipedge-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Flip Edge Realty site + inbound-lead capture function",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  }
+}
