@@ -1,21 +1,23 @@
 # One URL per page: the clean form 301s to the .html form the sitemap,
 # internal links and Search Console were built on (Ahrefs 2026-09-06: 30
 # duplicate-content errors from both forms returning 200 with no canonical).
-/about                                   /about.html  301
-/contact                                 /contact.html  301
-/faq                                     /faq.html  301
-/how-it-works                            /how-it-works.html  301
-/privacy-policy                          /privacy-policy.html  301
-/review                                  /review.html  301
-/sell-house-fast-bergenfield             /sell-house-fast-bergenfield.html  301
-/sell-house-fast-englewood               /sell-house-fast-englewood.html  301
-/sell-house-fast-fair-lawn               /sell-house-fast-fair-lawn.html  301
-/sell-house-fast-fort-lee                /sell-house-fast-fort-lee.html  301
-/sell-house-fast-garfield                /sell-house-fast-garfield.html  301
-/sell-house-fast-hackensack              /sell-house-fast-hackensack.html  301
-/sell-house-fast-lodi                    /sell-house-fast-lodi.html  301
-/sell-house-fast-paramus                 /sell-house-fast-paramus.html  301
-/sell-house-fast-ridgefield-park         /sell-house-fast-ridgefield-park.html  301
-/sell-house-fast-teaneck                 /sell-house-fast-teaneck.html  301
-/thank-you                               /thank-you.html  301
-/index.html                              /  301
+# The ! forces the rule: Netlify's implicit clean-URL match otherwise wins
+# and the plain rule is ignored (verified 2026-09-06: /about stayed 200).
+/about                                   /about.html  301!
+/contact                                 /contact.html  301!
+/faq                                     /faq.html  301!
+/how-it-works                            /how-it-works.html  301!
+/privacy-policy                          /privacy-policy.html  301!
+/review                                  /review.html  301!
+/sell-house-fast-bergenfield             /sell-house-fast-bergenfield.html  301!
+/sell-house-fast-englewood               /sell-house-fast-englewood.html  301!
+/sell-house-fast-fair-lawn               /sell-house-fast-fair-lawn.html  301!
+/sell-house-fast-fort-lee                /sell-house-fast-fort-lee.html  301!
+/sell-house-fast-garfield                /sell-house-fast-garfield.html  301!
+/sell-house-fast-hackensack              /sell-house-fast-hackensack.html  301!
+/sell-house-fast-lodi                    /sell-house-fast-lodi.html  301!
+/sell-house-fast-paramus                 /sell-house-fast-paramus.html  301!
+/sell-house-fast-ridgefield-park         /sell-house-fast-ridgefield-park.html  301!
+/sell-house-fast-teaneck                 /sell-house-fast-teaneck.html  301!
+/thank-you                               /thank-you.html  301!
+/index.html                              /  301!
